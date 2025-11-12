@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Добавить родственника</title>
+  <title>Add a person</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Добавить родственника</h1>
+    <h1>Add a person</h1>
     <nav>
-      <a href="index.html">Главная</a>
-      <a href="results.html">Результаты</a>
+      <a href="index.html">Main</a>
+      <a href="results.html">Results</a>
     </nav>
   </header>
 
   <form id="registerForm" onsubmit="savePerson(event)">
-    <input type="text" id="name" placeholder="Имя" required>
-    <input type="text" id="surname" placeholder="Фамилия" required>
+    <input type="text" id="name" placeholder="First name" required>
+    <input type="text" id="surname" placeholder="Second name" required>
     <input type="date" id="birthdate" required>
-    <textarea id="description" placeholder="Описание"></textarea>
-    <button type="submit">Сохранить</button>
+    <textarea id="description" placeholder="Description"></textarea>
+    <button type="submit">Save</button>
   </form>
 
   <script src="script.js"></script>
