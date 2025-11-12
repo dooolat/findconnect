@@ -12,7 +12,7 @@ function savePerson(event) {
   people.push(person);
   localStorage.setItem('people', JSON.stringify(people));
 
-  alert('Родственник успешно добавлен!');
+  alert('Person successfully added!');
   event.target.reset();
 }
 
@@ -27,14 +27,14 @@ function searchPerson() {
   );
 
   if (results.length === 0) {
-    resultsDiv.innerHTML = '<p>Ничего не найдено 😢</p>';
+    resultsDiv.innerHTML = '<p>Nothing found 😢</p>';
     return;
   }
 
   results.forEach(p => {
     const card = `<div class="person-card">
       <h3>${p.name} ${p.surname}</h3>
-      <p>Дата рождения: ${p.birthdate}</p>
+      <p>Date of birth: ${p.birthdate}</p>
       <p>${p.description}</p>
     </div>`;
     resultsDiv.innerHTML += card;
@@ -47,7 +47,7 @@ function displayAllPeople() {
   container.innerHTML = '';
 
   if (people.length === 0) {
-    container.innerHTML = '<p>Нет сохранённых данных.</p>';
+    container.innerHTML = '<p>No data saved.</p>';
     return;
   }
 
