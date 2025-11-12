@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FindConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FindConnect</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="register.html">Добавить родственника</a>
+      <a href="results.html">Результаты</a>
+    </nav>
+  </header>
+
+  <section class="search-section">
+    <h2>Найди своего родственника</h2>
+    <input type="text" id="searchInput" placeholder="Введите имя или фамилию">
+    <button onclick="searchPerson()">Поиск</button>
+  </section>
+
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

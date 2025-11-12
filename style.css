@@ -1,0 +1,52 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f6f6f6;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 1em;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.search-section {
+  margin: 40px;
+}
+
+input, textarea, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+button {
+  background: #1e1e2f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}
+
+.person-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
